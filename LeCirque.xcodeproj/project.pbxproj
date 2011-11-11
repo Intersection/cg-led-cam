@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAFEACAC146DC4FB009332E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACAB146DC4FB009332E4 /* Cocoa.framework */; };
+		DAFEACAE146DC4FB009332E4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACAD146DC4FB009332E4 /* AppKit.framework */; };
+		DAFEACB0146DC4FB009332E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACAF146DC4FB009332E4 /* Foundation.framework */; };
+		DAFEACB2146DC4FB009332E4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACB1146DC4FB009332E4 /* Accelerate.framework */; };
+		DAFEACB4146DC4FB009332E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACB3146DC4FB009332E4 /* AudioToolbox.framework */; };
+		DAFEACB6146DC4FB009332E4 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACB5146DC4FB009332E4 /* AudioUnit.framework */; };
+		DAFEACB8146DC4FB009332E4 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACB7146DC4FB009332E4 /* CoreAudio.framework */; };
+		DAFEACBA146DC4FB009332E4 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACB9146DC4FB009332E4 /* QuickTime.framework */; };
+		DAFEACBC146DC4FB009332E4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACBB146DC4FB009332E4 /* QTKit.framework */; };
+		DAFEACBE146DC4FB009332E4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACBD146DC4FB009332E4 /* CoreVideo.framework */; };
+		DAFEACC0146DC4FB009332E4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACBF146DC4FB009332E4 /* Carbon.framework */; };
+		DAFEACC2146DC4FB009332E4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEACC1146DC4FB009332E4 /* OpenGL.framework */; };
+		DAFEACC8146DC4FB009332E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAFEACC6146DC4FB009332E4 /* InfoPlist.strings */; };
+		DAFEACCB146DC4FC009332E4 /* CGCredits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAFEACCA146DC4FC009332E4 /* CGCredits.rtf */; };
+		DAFEACCD146DC4FC009332E4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAFEACCC146DC4FC009332E4 /* Credits.rtf */; };
+		DAFEACD0146DC4FC009332E4 /* LeCirqueApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAFEACCF146DC4FC009332E4 /* LeCirqueApp.cpp */; };
+		DAFEACD7146DC4FC009332E4 /* passthru.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DAFEACD6146DC4FC009332E4 /* passthru.vsh */; };
+		DAFEACD9146DC4FC009332E4 /* shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = DAFEACD8146DC4FC009332E4 /* shader.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAFEACA7146DC4FB009332E4 /* LeCirque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeCirque.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFEACAB146DC4FB009332E4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DAFEACAD146DC4FB009332E4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DAFEACAF146DC4FB009332E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAFEACB1146DC4FB009332E4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DAFEACB3146DC4FB009332E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DAFEACB5146DC4FB009332E4 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		DAFEACB7146DC4FB009332E4 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		DAFEACB9146DC4FB009332E4 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		DAFEACBB146DC4FB009332E4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		DAFEACBD146DC4FB009332E4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		DAFEACBF146DC4FB009332E4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		DAFEACC1146DC4FB009332E4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		DAFEACC5146DC4FB009332E4 /* LeCirque-Info.plist */ = {isa = PBXFileReference; path = "LeCirque-Info.plist"; sourceTree = "<group>"; };
+		DAFEACC7146DC4FB009332E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAFEACC9146DC4FC009332E4 /* LeCirque-Prefix.pch */ = {isa = PBXFileReference; path = "LeCirque-Prefix.pch"; sourceTree = "<group>"; };
+		DAFEACCA146DC4FC009332E4 /* CGCredits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CGCredits.rtf; sourceTree = "<group>"; };
+		DAFEACCC146DC4FC009332E4 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		DAFEACCF146DC4FC009332E4 /* LeCirqueApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LeCirqueApp.cpp; path = src/LeCirqueApp.cpp; sourceTree = "<group>"; };
+		DAFEACD2146DC4FC009332E4 /* Resources.h */ = {isa = PBXFileReference; name = Resources.h; path = include/Resources.h; sourceTree = "<group>"; };
+		DAFEACD3146DC4FC009332E4 /* Constants.h */ = {isa = PBXFileReference; name = Constants.h; path = include/Constants.h; sourceTree = "<group>"; };
+		DAFEACD6146DC4FC009332E4 /* passthru.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = passthru.vsh; path = resources/shaders/passthru.vsh; sourceTree = "<group>"; };
+		DAFEACD8146DC4FC009332E4 /* shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = shader.fsh; path = resources/shaders/shader.fsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAFEACA4146DC4FB009332E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFEACAC146DC4FB009332E4 /* Cocoa.framework in Frameworks */,
+				DAFEACAE146DC4FB009332E4 /* AppKit.framework in Frameworks */,
+				DAFEACB0146DC4FB009332E4 /* Foundation.framework in Frameworks */,
+				DAFEACB2146DC4FB009332E4 /* Accelerate.framework in Frameworks */,
+				DAFEACB4146DC4FB009332E4 /* AudioToolbox.framework in Frameworks */,
+				DAFEACB6146DC4FB009332E4 /* AudioUnit.framework in Frameworks */,
+				DAFEACB8146DC4FB009332E4 /* CoreAudio.framework in Frameworks */,
+				DAFEACBA146DC4FB009332E4 /* QuickTime.framework in Frameworks */,
+				DAFEACBC146DC4FB009332E4 /* QTKit.framework in Frameworks */,
+				DAFEACBE146DC4FB009332E4 /* CoreVideo.framework in Frameworks */,
+				DAFEACC0146DC4FB009332E4 /* Carbon.framework in Frameworks */,
+				DAFEACC2146DC4FB009332E4 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAFEAC9C146DC4FB009332E4 = {
+			isa = PBXGroup;
+			children = (
+				DAFEACC3146DC4FB009332E4 /* LeCirque */,
+				DAFEACAA146DC4FB009332E4 /* Frameworks */,
+				DAFEACA8146DC4FB009332E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAFEACA8146DC4FB009332E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACA7146DC4FB009332E4 /* LeCirque.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAFEACAA146DC4FB009332E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACAB146DC4FB009332E4 /* Cocoa.framework */,
+				DAFEACAD146DC4FB009332E4 /* AppKit.framework */,
+				DAFEACAF146DC4FB009332E4 /* Foundation.framework */,
+				DAFEACB1146DC4FB009332E4 /* Accelerate.framework */,
+				DAFEACB3146DC4FB009332E4 /* AudioToolbox.framework */,
+				DAFEACB5146DC4FB009332E4 /* AudioUnit.framework */,
+				DAFEACB7146DC4FB009332E4 /* CoreAudio.framework */,
+				DAFEACB9146DC4FB009332E4 /* QuickTime.framework */,
+				DAFEACBB146DC4FB009332E4 /* QTKit.framework */,
+				DAFEACBD146DC4FB009332E4 /* CoreVideo.framework */,
+				DAFEACBF146DC4FB009332E4 /* Carbon.framework */,
+				DAFEACC1146DC4FB009332E4 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAFEACC3146DC4FB009332E4 /* LeCirque */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACCE146DC4FC009332E4 /* Source */,
+				DAFEACD1146DC4FC009332E4 /* Headers */,
+				DAFEACD4146DC4FC009332E4 /* Resources */,
+				DAFEACC4146DC4FB009332E4 /* Supporting Files */,
+			);
+			path = LeCirque;
+			sourceTree = "<group>";
+		};
+		DAFEACC4146DC4FB009332E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACC5146DC4FB009332E4 /* LeCirque-Info.plist */,
+				DAFEACC6146DC4FB009332E4 /* InfoPlist.strings */,
+				DAFEACC9146DC4FC009332E4 /* LeCirque-Prefix.pch */,
+				DAFEACCA146DC4FC009332E4 /* CGCredits.rtf */,
+				DAFEACCC146DC4FC009332E4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAFEACCE146DC4FC009332E4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACCF146DC4FC009332E4 /* LeCirqueApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		DAFEACD1146DC4FC009332E4 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACD2146DC4FC009332E4 /* Resources.h */,
+				DAFEACD3146DC4FC009332E4 /* Constants.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		DAFEACD4146DC4FC009332E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACD5146DC4FC009332E4 /* Shaders */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DAFEACD5146DC4FC009332E4 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEACD6146DC4FC009332E4 /* passthru.vsh */,
+				DAFEACD8146DC4FC009332E4 /* shader.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAFEACA6146DC4FB009332E4 /* LeCirque */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFEACDC146DC4FC009332E4 /* Build configuration list for PBXNativeTarget "LeCirque" */;
+			buildPhases = (
+				DAFEACA3146DC4FB009332E4 /* Sources */,
+				DAFEACA4146DC4FB009332E4 /* Frameworks */,
+				DAFEACA5146DC4FB009332E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeCirque;
+			productName = LeCirque;
+			productReference = DAFEACA7146DC4FB009332E4 /* LeCirque.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAFEAC9E146DC4FB009332E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DAFEACA1146DC4FB009332E4 /* Build configuration list for PBXProject "LeCirque" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAFEAC9C146DC4FB009332E4;
+			productRefGroup = DAFEACA8146DC4FB009332E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAFEACA6146DC4FB009332E4 /* LeCirque */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAFEACA5146DC4FB009332E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFEACC8146DC4FB009332E4 /* InfoPlist.strings in Resources */,
+				DAFEACCB146DC4FC009332E4 /* CGCredits.rtf in Resources */,
+				DAFEACCD146DC4FC009332E4 /* Credits.rtf in Resources */,
+				DAFEACD7146DC4FC009332E4 /* passthru.vsh in Resources */,
+				DAFEACD9146DC4FC009332E4 /* shader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAFEACA3146DC4FB009332E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFEACD0146DC4FC009332E4 /* LeCirqueApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAFEACC6146DC4FB009332E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFEACC7146DC4FB009332E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAFEACDA146DC4FC009332E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = "/Users/$(USER)/SDKs/cinder_0.8.3_mac";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include";
+			};
+			name = Debug;
+		};
+		DAFEACDB146DC4FC009332E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = "/Users/$(USER)/SDKs/cinder_0.8.3_mac";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include";
+			};
+			name = Release;
+		};
+		DAFEACDD146DC4FC009332E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeCirque/LeCirque-Prefix.pch";
+				INFOPLIST_FILE = "LeCirque/LeCirque-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAFEACDE146DC4FC009332E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeCirque/LeCirque-Prefix.pch";
+				INFOPLIST_FILE = "LeCirque/LeCirque-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAFEACA1146DC4FB009332E4 /* Build configuration list for PBXProject "LeCirque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFEACDA146DC4FC009332E4 /* Debug */,
+				DAFEACDB146DC4FC009332E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFEACDC146DC4FC009332E4 /* Build configuration list for PBXNativeTarget "LeCirque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFEACDD146DC4FC009332E4 /* Debug */,
+				DAFEACDE146DC4FC009332E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAFEAC9E146DC4FB009332E4 /* Project object */;
+}
