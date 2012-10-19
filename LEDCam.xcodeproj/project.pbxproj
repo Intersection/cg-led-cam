@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA1BC3541631ABC700CF24E1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3531631ABC700CF24E1 /* Cocoa.framework */; };
+		DA1BC3561631ABC700CF24E1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3551631ABC700CF24E1 /* AppKit.framework */; };
+		DA1BC3581631ABC700CF24E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3571631ABC700CF24E1 /* Foundation.framework */; };
+		DA1BC35A1631ABC700CF24E1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3591631ABC700CF24E1 /* Accelerate.framework */; };
+		DA1BC35C1631ABC700CF24E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC35B1631ABC700CF24E1 /* AudioToolbox.framework */; };
+		DA1BC35E1631ABC700CF24E1 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC35D1631ABC700CF24E1 /* AudioUnit.framework */; };
+		DA1BC3601631ABC700CF24E1 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC35F1631ABC700CF24E1 /* CoreAudio.framework */; };
+		DA1BC3621631ABC700CF24E1 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3611631ABC700CF24E1 /* QuickTime.framework */; };
+		DA1BC3641631ABC700CF24E1 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3631631ABC700CF24E1 /* QTKit.framework */; };
+		DA1BC3661631ABC700CF24E1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3651631ABC700CF24E1 /* CoreVideo.framework */; };
+		DA1BC3681631ABC700CF24E1 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3671631ABC700CF24E1 /* Carbon.framework */; };
+		DA1BC36A1631ABC700CF24E1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BC3691631ABC700CF24E1 /* OpenGL.framework */; };
+		DA1BC3701631ABC700CF24E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA1BC36E1631ABC700CF24E1 /* InfoPlist.strings */; };
+		DA1BC3731631ABC700CF24E1 /* CGCredits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA1BC3721631ABC700CF24E1 /* CGCredits.rtf */; };
+		DA1BC3751631ABC700CF24E1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA1BC3741631ABC700CF24E1 /* Credits.rtf */; };
+		DA1BC3781631ABC700CF24E1 /* LEDCamApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1BC3771631ABC700CF24E1 /* LEDCamApp.cpp */; };
+		DA1BC37F1631ABC700CF24E1 /* passthru.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DA1BC37E1631ABC700CF24E1 /* passthru.vsh */; };
+		DA1BC3811631ABC700CF24E1 /* shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = DA1BC3801631ABC700CF24E1 /* shader.fsh */; };
+		DA1BC3841631ABC700CF24E1 /* rg_grad.png in Resources */ = {isa = PBXBuildFile; fileRef = DA1BC3831631ABC700CF24E1 /* rg_grad.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA1BC34F1631ABC700CF24E1 /* LEDCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1BC3531631ABC700CF24E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DA1BC3551631ABC700CF24E1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DA1BC3571631ABC700CF24E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA1BC3591631ABC700CF24E1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DA1BC35B1631ABC700CF24E1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DA1BC35D1631ABC700CF24E1 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		DA1BC35F1631ABC700CF24E1 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		DA1BC3611631ABC700CF24E1 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		DA1BC3631631ABC700CF24E1 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		DA1BC3651631ABC700CF24E1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		DA1BC3671631ABC700CF24E1 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		DA1BC3691631ABC700CF24E1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		DA1BC36D1631ABC700CF24E1 /* LEDCam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LEDCam-Info.plist"; sourceTree = "<group>"; };
+		DA1BC36F1631ABC700CF24E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA1BC3711631ABC700CF24E1 /* LEDCam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LEDCam-Prefix.pch"; sourceTree = "<group>"; };
+		DA1BC3721631ABC700CF24E1 /* CGCredits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CGCredits.rtf; sourceTree = "<group>"; };
+		DA1BC3741631ABC700CF24E1 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		DA1BC3771631ABC700CF24E1 /* LEDCamApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LEDCamApp.cpp; path = src/LEDCamApp.cpp; sourceTree = "<group>"; };
+		DA1BC37A1631ABC700CF24E1 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = include/Resources.h; sourceTree = "<group>"; };
+		DA1BC37B1631ABC700CF24E1 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = include/Constants.h; sourceTree = "<group>"; };
+		DA1BC37E1631ABC700CF24E1 /* passthru.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = passthru.vsh; path = resources/shaders/passthru.vsh; sourceTree = "<group>"; };
+		DA1BC3801631ABC700CF24E1 /* shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = shader.fsh; path = resources/shaders/shader.fsh; sourceTree = "<group>"; };
+		DA1BC3831631ABC700CF24E1 /* rg_grad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rg_grad.png; path = resources/images/rg_grad.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA1BC34C1631ABC700CF24E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1BC3541631ABC700CF24E1 /* Cocoa.framework in Frameworks */,
+				DA1BC3561631ABC700CF24E1 /* AppKit.framework in Frameworks */,
+				DA1BC3581631ABC700CF24E1 /* Foundation.framework in Frameworks */,
+				DA1BC35A1631ABC700CF24E1 /* Accelerate.framework in Frameworks */,
+				DA1BC35C1631ABC700CF24E1 /* AudioToolbox.framework in Frameworks */,
+				DA1BC35E1631ABC700CF24E1 /* AudioUnit.framework in Frameworks */,
+				DA1BC3601631ABC700CF24E1 /* CoreAudio.framework in Frameworks */,
+				DA1BC3621631ABC700CF24E1 /* QuickTime.framework in Frameworks */,
+				DA1BC3641631ABC700CF24E1 /* QTKit.framework in Frameworks */,
+				DA1BC3661631ABC700CF24E1 /* CoreVideo.framework in Frameworks */,
+				DA1BC3681631ABC700CF24E1 /* Carbon.framework in Frameworks */,
+				DA1BC36A1631ABC700CF24E1 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA1BC3441631ABC700CF24E1 = {
+			isa = PBXGroup;
+			children = (
+				DA1BC36B1631ABC700CF24E1 /* LEDCam */,
+				DA1BC3521631ABC700CF24E1 /* Frameworks */,
+				DA1BC3501631ABC700CF24E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA1BC3501631ABC700CF24E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC34F1631ABC700CF24E1 /* LEDCam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA1BC3521631ABC700CF24E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC3531631ABC700CF24E1 /* Cocoa.framework */,
+				DA1BC3551631ABC700CF24E1 /* AppKit.framework */,
+				DA1BC3571631ABC700CF24E1 /* Foundation.framework */,
+				DA1BC3591631ABC700CF24E1 /* Accelerate.framework */,
+				DA1BC35B1631ABC700CF24E1 /* AudioToolbox.framework */,
+				DA1BC35D1631ABC700CF24E1 /* AudioUnit.framework */,
+				DA1BC35F1631ABC700CF24E1 /* CoreAudio.framework */,
+				DA1BC3611631ABC700CF24E1 /* QuickTime.framework */,
+				DA1BC3631631ABC700CF24E1 /* QTKit.framework */,
+				DA1BC3651631ABC700CF24E1 /* CoreVideo.framework */,
+				DA1BC3671631ABC700CF24E1 /* Carbon.framework */,
+				DA1BC3691631ABC700CF24E1 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA1BC36B1631ABC700CF24E1 /* LEDCam */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC3761631ABC700CF24E1 /* Source */,
+				DA1BC3791631ABC700CF24E1 /* Headers */,
+				DA1BC37C1631ABC700CF24E1 /* Resources */,
+				DA1BC36C1631ABC700CF24E1 /* Supporting Files */,
+			);
+			path = LEDCam;
+			sourceTree = "<group>";
+		};
+		DA1BC36C1631ABC700CF24E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC36D1631ABC700CF24E1 /* LEDCam-Info.plist */,
+				DA1BC36E1631ABC700CF24E1 /* InfoPlist.strings */,
+				DA1BC3711631ABC700CF24E1 /* LEDCam-Prefix.pch */,
+				DA1BC3721631ABC700CF24E1 /* CGCredits.rtf */,
+				DA1BC3741631ABC700CF24E1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA1BC3761631ABC700CF24E1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC3771631ABC700CF24E1 /* LEDCamApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		DA1BC3791631ABC700CF24E1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC37A1631ABC700CF24E1 /* Resources.h */,
+				DA1BC37B1631ABC700CF24E1 /* Constants.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		DA1BC37C1631ABC700CF24E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC37D1631ABC700CF24E1 /* Shaders */,
+				DA1BC3821631ABC700CF24E1 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DA1BC37D1631ABC700CF24E1 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC37E1631ABC700CF24E1 /* passthru.vsh */,
+				DA1BC3801631ABC700CF24E1 /* shader.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		DA1BC3821631ABC700CF24E1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BC3831631ABC700CF24E1 /* rg_grad.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA1BC34E1631ABC700CF24E1 /* LEDCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1BC3871631ABC700CF24E1 /* Build configuration list for PBXNativeTarget "LEDCam" */;
+			buildPhases = (
+				DA1BC34B1631ABC700CF24E1 /* Sources */,
+				DA1BC34C1631ABC700CF24E1 /* Frameworks */,
+				DA1BC34D1631ABC700CF24E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LEDCam;
+			productName = LEDCam;
+			productReference = DA1BC34F1631ABC700CF24E1 /* LEDCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA1BC3461631ABC700CF24E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CG;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Control Group";
+			};
+			buildConfigurationList = DA1BC3491631ABC700CF24E1 /* Build configuration list for PBXProject "LEDCam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA1BC3441631ABC700CF24E1;
+			productRefGroup = DA1BC3501631ABC700CF24E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA1BC34E1631ABC700CF24E1 /* LEDCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA1BC34D1631ABC700CF24E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1BC3701631ABC700CF24E1 /* InfoPlist.strings in Resources */,
+				DA1BC3731631ABC700CF24E1 /* CGCredits.rtf in Resources */,
+				DA1BC3751631ABC700CF24E1 /* Credits.rtf in Resources */,
+				DA1BC37F1631ABC700CF24E1 /* passthru.vsh in Resources */,
+				DA1BC3811631ABC700CF24E1 /* shader.fsh in Resources */,
+				DA1BC3841631ABC700CF24E1 /* rg_grad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA1BC34B1631ABC700CF24E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1BC3781631ABC700CF24E1 /* LEDCamApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA1BC36E1631ABC700CF24E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1BC36F1631ABC700CF24E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA1BC3851631ABC700CF24E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = "/Users/$(USER)/SDKs/cinder_0.8.4_mac";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include";
+			};
+			name = Debug;
+		};
+		DA1BC3861631ABC700CF24E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = "/Users/$(USER)/SDKs/cinder_0.8.4_mac";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include";
+			};
+			name = Release;
+		};
+		DA1BC3881631ABC700CF24E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LEDCam/LEDCam-Prefix.pch";
+				INFOPLIST_FILE = "LEDCam/LEDCam-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA1BC3891631ABC700CF24E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LEDCam/LEDCam-Prefix.pch";
+				INFOPLIST_FILE = "LEDCam/LEDCam-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA1BC3491631ABC700CF24E1 /* Build configuration list for PBXProject "LEDCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1BC3851631ABC700CF24E1 /* Debug */,
+				DA1BC3861631ABC700CF24E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA1BC3871631ABC700CF24E1 /* Build configuration list for PBXNativeTarget "LEDCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1BC3881631ABC700CF24E1 /* Debug */,
+				DA1BC3891631ABC700CF24E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA1BC3461631ABC700CF24E1 /* Project object */;
+}
