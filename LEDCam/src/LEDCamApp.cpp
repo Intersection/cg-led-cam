@@ -96,7 +96,7 @@ void LEDCamApp::draw()
 	mShader.uniform( "aspect", aspect );
 	mShader.uniform( "tex", 0 );
 	mShader.uniform( "bright", 1.9f );
-	mShader.uniform( "ledCount", 100.0f );
+	mShader.uniform( "ledCount", 400.0f );
 	gl::drawSolidRect( getWindowBounds() );
 	mTexture.unbind();
 	mShader.unbind();

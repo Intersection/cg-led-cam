@@ -20,7 +20,10 @@ void main()
 {
     vec2 uv = gl_TexCoord[0].st;
 
-    vec2 coord = gl_TexCoord[0].st * ledCount;
+	float s = gl_TexCoord[0].s * ledCount;
+	float t = gl_TexCoord[0].t * (ledCount * aspect);
+	
+    vec2 coord = vec2(s, t);
     vec4 color = pixelize(uv, ledCount) * bright;
 
 
