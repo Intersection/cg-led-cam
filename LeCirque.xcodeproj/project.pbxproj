@@ -41,14 +41,14 @@
 		DAFEACBD146DC4FB009332E4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		DAFEACBF146DC4FB009332E4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		DAFEACC1146DC4FB009332E4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		DAFEACC5146DC4FB009332E4 /* LeCirque-Info.plist */ = {isa = PBXFileReference; path = "LeCirque-Info.plist"; sourceTree = "<group>"; };
+		DAFEACC5146DC4FB009332E4 /* LeCirque-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeCirque-Info.plist"; sourceTree = "<group>"; };
 		DAFEACC7146DC4FB009332E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DAFEACC9146DC4FC009332E4 /* LeCirque-Prefix.pch */ = {isa = PBXFileReference; path = "LeCirque-Prefix.pch"; sourceTree = "<group>"; };
+		DAFEACC9146DC4FC009332E4 /* LeCirque-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeCirque-Prefix.pch"; sourceTree = "<group>"; };
 		DAFEACCA146DC4FC009332E4 /* CGCredits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CGCredits.rtf; sourceTree = "<group>"; };
 		DAFEACCC146DC4FC009332E4 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		DAFEACCF146DC4FC009332E4 /* LeCirqueApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LeCirqueApp.cpp; path = src/LeCirqueApp.cpp; sourceTree = "<group>"; };
-		DAFEACD2146DC4FC009332E4 /* Resources.h */ = {isa = PBXFileReference; name = Resources.h; path = include/Resources.h; sourceTree = "<group>"; };
-		DAFEACD3146DC4FC009332E4 /* Constants.h */ = {isa = PBXFileReference; name = Constants.h; path = include/Constants.h; sourceTree = "<group>"; };
+		DAFEACD2146DC4FC009332E4 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = include/Resources.h; sourceTree = "<group>"; };
+		DAFEACD3146DC4FC009332E4 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = include/Constants.h; sourceTree = "<group>"; };
 		DAFEACD6146DC4FC009332E4 /* passthru.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = passthru.vsh; path = resources/shaders/passthru.vsh; sourceTree = "<group>"; };
 		DAFEACD8146DC4FC009332E4 /* shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = shader.fsh; path = resources/shaders/shader.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */

@@ -5,6 +5,7 @@
 #include "cinder/gl/Fbo.h"
 #include "cinder/Surface.h"
 #include "cinder/Capture.h"
+#include "cinder/Rand.h"
 
 #include "Resources.h"
 #include "Constants.h"
@@ -27,6 +28,8 @@ class LeCirqueApp : public AppBasic {
 	gl::GlslProg	mShader;
 	gl::Fbo			mFbo;
 
+	Surface			mSurface;
+	Rand			mRand;
 };
 
 void LeCirqueApp::setup()
@@ -50,6 +53,7 @@ void LeCirqueApp::setup()
 	}
 	
 	mFbo = gl::Fbo( kCaptureWidth, kCaptureHeight );
+	Rand::randomize();
 }
 
 void LeCirqueApp::mouseDown( MouseEvent event )
@@ -58,7 +62,7 @@ void LeCirqueApp::mouseDown( MouseEvent event )
 
 void LeCirqueApp::keyDown( KeyEvent event )
 {
-	if (event.getCode() == KeyEvent::KEY_f ){
+	if ( event.getCode() == KeyEvent::KEY_f ){
 		setFullScreen( !isFullScreen() );
 	}
 }
@@ -71,30 +75,53 @@ void LeCirqueApp::resize( ResizeEvent event )
 
 void LeCirqueApp::update()
 {
-	if( mCapture && mCapture.checkNewFrame() ) mTexture = gl::Texture( mCapture.getSurface() );
+	if( mCapture && mCapture.checkNewFrame() ){
+		mSurface = mCapture.getSurface();
+	}
 }
 
 void LeCirqueApp::draw()
 {
 	// clear out the window with black
-	gl::clear( kClearColor ); 
-	
-	if( !mTexture ) return;
+	gl::clear( kClearColor );
+
+	if( !mSurface ) return;
+
 	mFbo.bindFramebuffer();
-	mTexture.enableAndBind();
-	mShader.bind();
-	mShader.uniform( "tex", 0 );
-	mShader.uniform( "mixColor", Vec3d( 1.0, 0.5, -0.25 ) );
-	gl::drawSolidRect( getWindowBounds() );
-	mTexture.unbind();
-	mShader.unbind();
+	gl::clear( kClearColor );
+
+	int gap = 1;
+	Vec2f lastPoint = Vec2f::zero();
+	PolyLine<Vec2f> line;
+	gl::pushMatrices();
+	Surface::Iter iter = mSurface.getIter();
+	while( iter.line() ){
+		line = PolyLine<Vec2f>();
+		line.begin();
+
+		while( iter.pixel() ){
+			if( (iter.x() % gap) == 0 && (iter.y() % gap) == 0 ){
+				gl::color( mSurface.getPixel( Vec2i( iter.x(), iter.y() ) ) );
+				line.push_back( Vec2f( iter.x() , iter.y() ) );
+			}
+		}
+		
+		line.end();
+		gl::draw( line );
+	}
+
+	gl::popMatrices();
 	mFbo.unbindFramebuffer();
-	
+
 	gl::Texture fboTexture = mFbo.getTexture();
 	fboTexture.setFlipped();
+	mShader.bind();
+	mShader.uniform( "tex", 0 );
+	mShader.uniform( "mixColor", Vec3d( 0.0, 0.0, 0.0 ) );
 	gl::draw( fboTexture );
-	
+	mShader.unbind();
+
 }
 
 
-CINDER_APP_BASIC( LeCirqueApp, RendererGl(0) )
+CINDER_APP_BASIC( LeCirqueApp, RendererGl(2) )
