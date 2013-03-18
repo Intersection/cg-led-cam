@@ -6,6 +6,8 @@ uniform float bright;
 // 'LED' resolution - number of LEDs on each axis - this is not corrected for aspect ratio.
 uniform float ledCount;
 
+uniform float aspect;
+
 vec4 pixelize(vec2 uv, float count) {
     float dx = 1.0/count;
     float dy = 1.0/count;
@@ -22,10 +24,10 @@ void main()
     vec4 color = pixelize(uv, ledCount) * bright;
 
 
+	// Convert the square pixels to "round" "LED" style
     float mvx = abs(sin(coord.s * 3.1415)) * 1.0;
     float mvy = abs(sin(coord.t * 3.1415)) * 1.0;
 
-	// Convert the square pixels to "round" "LED" style
     if (mvx * mvy < 0.99)
         color = color * (mvx * mvy);
 

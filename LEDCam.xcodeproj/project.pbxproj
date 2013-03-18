@@ -334,6 +334,7 @@
 				GCC_PREFIX_HEADER = "LEDCam/LEDCam-Prefix.pch";
 				INFOPLIST_FILE = "LEDCam/LEDCam-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -345,6 +346,7 @@
 				GCC_PREFIX_HEADER = "LEDCam/LEDCam-Prefix.pch";
 				INFOPLIST_FILE = "LEDCam/LEDCam-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -368,6 +370,7 @@
 				DA1BC3891631ABC700CF24E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

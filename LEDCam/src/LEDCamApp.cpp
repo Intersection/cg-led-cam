@@ -91,9 +91,12 @@ void LEDCamApp::draw()
 	mFbo.bindFramebuffer();
 	mTexture.enableAndBind();
 	mShader.bind();
+	float aspect = kWindowHeight/kWindowWidth;
+	cout << "Aspect: " << aspect << " \n";
+	mShader.uniform( "aspect", aspect );
 	mShader.uniform( "tex", 0 );
 	mShader.uniform( "bright", 1.9f );
-	mShader.uniform( "ledCount", 400.0f );
+	mShader.uniform( "ledCount", 100.0f );
 	gl::drawSolidRect( getWindowBounds() );
 	mTexture.unbind();
 	mShader.unbind();
