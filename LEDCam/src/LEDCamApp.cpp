@@ -92,9 +92,8 @@ void LEDCamApp::draw()
 	mTexture.enableAndBind();
 	mShader.bind();
 	mShader.uniform( "tex", 0 );
-	mShader.uniform( "bright", 0.8f );
-    float throb = 100.0f * fmod( (float)getElapsedSeconds(), 100.0f );
-	mShader.uniform( "ledScale", throb );
+	mShader.uniform( "bright", 1.9f );
+	mShader.uniform( "ledCount", 400.0f );
 	gl::drawSolidRect( getWindowBounds() );
 	mTexture.unbind();
 	mShader.unbind();
